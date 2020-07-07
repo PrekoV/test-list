@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+.green-button{
+    background-color: $green;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    outline: none !important;
+}
