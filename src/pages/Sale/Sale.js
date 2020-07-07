@@ -38,10 +38,14 @@ function Sale({ getHouses, houses, loading, page }) {
             ></div>
           </div>
         ) : (
-          <div className="d-flex justify-content-between px-3 flex-wrap">
+          <div className="d-flex justify-content-between px-3 flex-wrap items-list">
             {houses.length
               ? houses.map((item) => <Card key={item.id} item={item}></Card>)
               : "Нет объектов"}
+              <div className='placeholder-card mx-2'></div>
+              <div className='placeholder-card mx-2'></div>
+              <div className='placeholder-card mx-2'></div>
+              <div className='placeholder-card mx-2'></div>
           </div>
         )}
       </div>

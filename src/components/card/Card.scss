@@ -17,7 +17,7 @@
 
 .metric {
   position: relative;
-  font-size: .8rem;
+  font-size: 0.8rem;
   &::before {
     position: absolute;
     content: "";
@@ -29,16 +29,23 @@
   }
 }
 
-.card-title{
-    font-size: 20px;
+.card-title {
+  font-size: 20px;
 }
 
-.image-wrapper{
+.image-wrapper {
   height: 200px;
   overflow: hidden;
-  .card-img-top{
-    width: auto !important;
-    object-fit: contain;
+  background-image: url(https://lh3.googleusercontent.com/proxy/MmtcVQO7ZVlIKS_DQfYPqiLKLfzrON9BUpInuzJL7tY3G6m8QDSKSOCsYQrXTZPH4tRyGZqBAjPYKEkKwE_bD8UCn6V9QmgiGByW3V1FQO-Ds4Ko);
+  background-position: center;
+  background-size: contain;
+  .card-img-top {
+    object-fit: cover;
     height: 100%;
   }
+}
+
+.card{
+  max-width: 18rem !important;
+  width: 100% !important;
 }

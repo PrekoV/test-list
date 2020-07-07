@@ -11,7 +11,7 @@ export default function Card({ item }) {
   };
 
   return (
-    <div className="card border-0" style={{ width: "18rem" }}>
+    <div className="card border-0 m-2" >
       <div className="image-wrapper">
         <img
           className="card-img-top"
