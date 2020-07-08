@@ -9,7 +9,7 @@ export const getHouses = ({ page }) => {
   return (dispatch) => {
     const limit = 32;
     dispatch(getHouseFetchAction());
-    return API.get(`?pagination[offset]=${page * limit}`)
+    return API.get(`properties/country?pagination[offset]=${page * limit}`)
       .then((res) => {
         dispatch(getHouseSuccessAction({...res.data, page}));
       })
